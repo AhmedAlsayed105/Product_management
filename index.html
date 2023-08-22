@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> اداره المنتجات  </title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <div>
+                <!-- <img src="./WhatsApp Image 2023-08-02 at 11.43.14 PM.jpeg" alt=""> -->
+            </div>
+            <h1> اداره المنتجات  </h1>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="اسم المنتج" type="text" id="title">
+            <div class="price">
+                <input type="number" onKeyup="getTotal()"  id="price" placeholder="السعر">
+                <input type="number" onKeyup="getTotal()" id="taxes" placeholder="الضرايب">
+                <input type="number" onKeyup="getTotal()" id="ads" placeholder="الاعلانات">
+                <input type="number" onKeyup="getTotal()" id="discount" placeholder="الخصومات">
+                <small id="total"></small>
+            </div>
+            <input type="number"  placeholder="عدد المنتجات"  id="count">
+            <input type="text"  placeholder="نوع المنتج"  id="category">
+            <button  id="submit">انشاء المنتجات</button>
+        </div>
+        <div class="output">
+            <div class="searchBlock">
+                <input type="text" id="search" onkeyup="searchDate(this.value)" placeholder="بحث">
+                <div class="btnSearch">
+                    <button onclick="getSearchMode(this.id)" id="searchTitle"> بحث با اسم المنتج</button>
+                    <button onclick="getSearchMode(this.id)" id="searchCategory">بحث بنوع المنتج </button>
+                </div>
+                <div id="delateAll">
+                    
+                </div>
+                <table >
+                    <tr>
+                        <th>id</th>
+                        <th>اسم المنتج </th>
+                        <th>السعر</th>
+                        <th>الضرايب</th>
+                        <th>الاعلانات</th>
+                        <th>الخصومات</th>
+                        <th>السعر الاجمالي</th>
+                        <th>نوع المنتج</th>
+                        <th>تعديل المنتج</th>
+                        <th>حذف المنتج</th>
+                    </tr>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  /* color: #ededed; */
+  /* height: 1000vh; */
+  /* background-color: #222; */
+  background-color: #546e7a;
+  background-color: #455a64f2;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: red;
+  --second-color: #0ef;
+  --three-color: #fff;
+  --round: 5px;
+  --padding: 20px;
+  --margin-bottom: 50px;
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* media container */
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 945px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1155px;
+  }
+}
+/* media container */
+.crud {
+  width: 80%;
+  margin: auto;
+}
+/* start header */
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+/* End header */
+/* start input */
+input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: var(--round);
+  -webkit-border-radius: var(--round);
+  -moz-border-radius: var(--round);
+  -ms-border-radius: var(--round);
+  -o-border-radius: var(--round);
+  margin: 4px 0;
+  background-color: white;
+  padding: 24px 5px;
+  color: #fff;
+  font-size: 26px;
+}
+input:focus {
+  background-color: #000;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.price input {
+  width: 20%;
+}
+#total {
+  background-color: red;
+  padding: 5px 2px;
+  border-radius: var(--round);
+  -webkit-border-radius: var(--round);
+  -moz-border-radius: var(--round);
+  -ms-border-radius: var(--round);
+  -o-border-radius: var(--round);
+}
+#total::before {
+  content: "اجمالي السعر  :";
+}
+button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #00eeffd9;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-size: 23px;
+}
+button:hover {
+  background-color: red;
+  background-color: var(--second-color);
+  letter-spacing: 1px;
+}
+button#delateAllBtn {
+  margin: 15px 0 10px;
+}
+.btnSearch {
+  display: flex;
+  justify-content: space-between;
+}
+.btnSearch button {
+  width: 45%;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  table {
+    width: 50px;
+    margin-left: -35px;
+  }
+  tbody tr td {
+    padding: 10px 0 !important;
+  }
+  table th {
+    font-size: 10px !important;
+  }
+}
+@media (min-width: 501px ) and (max-width:650px){
+    table th {
+        font-size: 15px !important;
+        padding: 5px 1px !important;
+
+      }
+}
+table th {
+  width: 20px;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 20px;
+}
+th td {
+  /* padding: 5px; */
+}
+#tbody {
+  margin-bottom: 5px;
+}
+tbody tr td {
+  padding: 10px;
+  background-color: #455a64c7;
+  border-radius: 2px;
+}
+/* End input */
+/*  */
+.head {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
